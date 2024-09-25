@@ -1,0 +1,266 @@
+@font-face{
+    font-family: 'slika';
+    src:url(./fonts/silka-regular-webfont.eot) format('eot'),
+        url(./fonts/silka-regular-webfont.woff) format('woff'),
+        url(./fonts/silka-regular-webfont.woff2) format('woff2')
+}
+@font-face{
+    font-family: 'slika-italic';
+    src:url(./fonts/silka-regularitalic-webfont.eot) format('eot'),
+        url(./fonts/silka-regularitalic-webfont.woff) format('woff'),
+        url(./fonts/silka-regularitalic-webfont.woff2) format('woff2')
+}
+:root{
+    --fdb-or:#AC936E; 
+    --fdb-smooth-or:#ac936e80; 
+    --fdb-gris:#928D88; 
+    --fdb-noir:#000000; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    /* background-image: url(./img/LOGO-DORÉ-PLEIN.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+    font-family: 'slika';
+    background-color: var(--fdb-smooth-or);
+}
+.admin{
+    width:120px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+}
+.move{
+    width: 800px;
+    position: absolute;
+    top: 75%;
+}
+form{
+    width: 65%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background-color: white;
+    border: 1px solid var(--fdb-or);
+    padding : 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    transform: translateX(28%);
+    margin-top: 6%;
+}
+.form-admin{
+    width: 60%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background-color: white;
+    border: 1px solid var(--fdb-or);
+    padding : 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    transform: translateX(35%);
+    margin-top: 15%;
+}
+.form-admin input{
+    font-family: 'slika';
+    margin: 2%;
+    padding: 2%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom : 0.6px solid var(--fdb-or);
+    background-color: white;
+    font-size: 0.8rem;
+    color: black;
+}
+.inner-picture{
+    width:50%;
+}
+input {
+    font-family: 'slika';
+    margin: 5%;
+    padding: 2%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom : 0.6px solid var(--fdb-or);
+    background-color: white;
+    font-size: 0.8rem;
+    color: black;
+}
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+
+p{
+    margin-top: 1%;
+    font-size: 1rem;
+    color: var(--fdb-or);
+    font-family: 'slika-italic';
+    transform: translateX(55%);
+}
+.loginForm{
+    transform: translateY(80%);
+}
+label{
+    display: inline-block;
+    font-size: 0.5em;
+    box-shadow: none;
+}
+.identite, .identite2, .identite3, .identite4{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.identite input, .identite2 input, .identite3 input, .identite4 input{
+    width: 50%;
+}
+
+.cb{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: -1%;
+}
+form button{
+    width: 20%;
+    padding: 1%;
+    margin: 1%;
+    border: 0.8px solid var(--fdb-or);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-family: 'slika';
+    cursor: pointer;
+    background-color: white;
+}
+article{
+    letter-spacing: 1px;
+    transform: translateX(10%);
+}
+
+h4{
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--fdb-or);
+}
+
+h3{
+    letter-spacing: 1px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 2.5rem;
+}
+h1{
+    color: var(--fdb-or);
+    font-size: 0.8rem;
+    margin-top: 1%;
+}
+table {
+    width: 90%;
+    font-family: 'slika';
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+  
+td, th {
+    width: 10%;
+    border: 1.5px solid var(--fdb-or);
+    text-align: left;
+    padding: 0.8%;
+}
+td{
+    font-size: 0.8rem;
+}
+th{
+    font-size: 0.8rem;
+}
+  
+tr:nth-child(even) {
+    background-color: var(--fdb-gris);
+}
+
+.merci_move{
+   
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'slika';
+    text-transform: uppercase;
+    background: linear-gradient(90deg,var(--fdb-or) , var(--fdb-gris),var(--fdb-or));
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 84%;
+    animation: shine 8s linear;
+    position: relative;
+    left: -8%;
+}
+
+.dashboard{
+    font-size: 60px;
+}
+.dashb{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1%;
+}
+.dashb a{
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 8%;
+    font-size: 20px;
+    color: var(--fdb-or);
+    font-family: 'slika-italic';
+}
+.search{
+    width: 40%;
+    font-size: 18px;
+}
+
+i{
+    margin-left: 5%;
+}
+
+@keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 700%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    form{
+        margin-top: 2%;
+    }
+    .admin{
+        width: 100px;
+    }
+    .form-admin button{
+        width : 40%;
+    }
+
+  }
+
+ 
